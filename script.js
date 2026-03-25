@@ -45,7 +45,7 @@ const observer = new IntersectionObserver((entries) => {
 
 // Add fade-in class to sections
 document.querySelectorAll(
-  '.feature-card, .product-item, .stat-card, .step-card, .section-header, .cta-inner'
+  '.feature-card, .pricing-card, .support-card, .stat-card, .step-card, .section-header, .cta-inner'
 ).forEach(el => {
   el.classList.add('fade-in');
   observer.observe(el);

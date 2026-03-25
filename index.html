@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wantedly - シゴトでココロオドル</title>
+  <title>Graph Pocket - AI駆動エンジニアによる、攻めのサブスク型社内SEサービス</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -14,20 +14,30 @@
   <header class="header">
     <div class="header-inner">
       <a href="#" class="logo">
-        <svg class="logo-icon" viewBox="0 0 32 32" width="32" height="32">
-          <circle cx="16" cy="16" r="16" fill="#21BDDB"/>
-          <text x="16" y="21" text-anchor="middle" fill="#fff" font-size="16" font-weight="bold" font-family="Lato, sans-serif">W</text>
+        <svg class="logo-icon" viewBox="0 0 36 36" width="36" height="36">
+          <defs>
+            <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#6C5CE7"/>
+              <stop offset="100%" stop-color="#0984E3"/>
+            </linearGradient>
+          </defs>
+          <rect width="36" height="36" rx="10" fill="url(#logoGrad)"/>
+          <path d="M10 18 L14 12 L18 20 L22 10 L26 18" stroke="#fff" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="14" cy="12" r="2" fill="#fff"/>
+          <circle cx="18" cy="20" r="2" fill="#fff"/>
+          <circle cx="22" cy="10" r="2" fill="#fff"/>
         </svg>
-        <span class="logo-text">Wantedly</span>
+        <span class="logo-text">Graph Pocket</span>
       </a>
       <nav class="nav">
-        <a href="#features" class="nav-link">募集を探す</a>
-        <a href="#stories" class="nav-link">ストーリー</a>
-        <a href="#companies" class="nav-link">企業一覧</a>
+        <a href="#features" class="nav-link">サービス内容</a>
+        <a href="#pricing" class="nav-link">料金プラン</a>
+        <a href="#support" class="nav-link">支援内容</a>
+        <a href="#steps" class="nav-link">導入の流れ</a>
       </nav>
       <div class="header-actions">
         <a href="#" class="btn-login">ログイン</a>
-        <a href="#" class="btn-signup">新規登録</a>
+        <a href="#" class="btn-signup">無料相談する</a>
       </div>
       <button class="hamburger" aria-label="メニュー">
         <span></span><span></span><span></span>
@@ -38,12 +48,13 @@
   <!-- Mobile Menu -->
   <div class="mobile-menu">
     <nav class="mobile-nav">
-      <a href="#features" class="mobile-nav-link">募集を探す</a>
-      <a href="#stories" class="mobile-nav-link">ストーリー</a>
-      <a href="#companies" class="mobile-nav-link">企業一覧</a>
+      <a href="#features" class="mobile-nav-link">サービス内容</a>
+      <a href="#pricing" class="mobile-nav-link">料金プラン</a>
+      <a href="#support" class="mobile-nav-link">支援内容</a>
+      <a href="#steps" class="mobile-nav-link">導入の流れ</a>
       <div class="mobile-actions">
         <a href="#" class="btn-login">ログイン</a>
-        <a href="#" class="btn-signup">新規登録</a>
+        <a href="#" class="btn-signup">無料相談する</a>
       </div>
     </nav>
   </div>
@@ -52,47 +63,55 @@
   <section class="hero">
     <div class="hero-inner">
       <div class="hero-content">
-        <h1 class="hero-title">シゴトでココロオドル<br>ひとをふやす。</h1>
-        <p class="hero-subtitle">究極の適材適所により、すべての人が没頭できる仕事と出会える世界を。<br>共感でつながる、新しいビジネスSNS。</p>
+        <div class="hero-badge">AI-Driven Engineering as a Service</div>
+        <h1 class="hero-title">エンジニアを雇わない。<br>でも、攻めのITを。</h1>
+        <p class="hero-subtitle">AI駆動エンジニアによる、サブスク型社内SEサービス。<br>月額固定で、情シス・開発・DX推進をまるごとカバーします。</p>
         <div class="hero-actions">
-          <a href="#" class="btn-primary">まずは無料で始める</a>
-          <a href="#" class="btn-secondary">企業の方はこちら</a>
+          <a href="#pricing" class="btn-primary">料金プランを見る</a>
+          <a href="#" class="btn-secondary">まずは無料で相談</a>
         </div>
         <div class="hero-stats-inline">
           <div class="hero-stat-item">
-            <span class="hero-stat-number">43,000</span>
-            <span class="hero-stat-label">社以上が利用</span>
+            <span class="hero-stat-number">月額3.98万円</span>
+            <span class="hero-stat-label">〜</span>
           </div>
+          <div class="hero-stat-divider"></div>
           <div class="hero-stat-item">
-            <span class="hero-stat-number">4,300,000</span>
-            <span class="hero-stat-label">人以上が登録</span>
+            <span class="hero-stat-number">数倍速</span>
+            <span class="hero-stat-label">AI活用の開発スピード</span>
           </div>
         </div>
       </div>
       <div class="hero-visual">
         <div class="hero-card hero-card-1">
-          <div class="card-avatar"></div>
+          <div class="card-icon card-icon-code">
+            <svg viewBox="0 0 24 24" width="22" height="22"><path d="M9 18l-6-6 6-6" stroke="#6C5CE7" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M15 6l6 6-6 6" stroke="#6C5CE7" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
           <div class="card-lines">
             <div class="card-line card-line-long"></div>
             <div class="card-line card-line-medium"></div>
           </div>
-          <div class="card-tag">エンジニア</div>
+          <div class="card-tag">高速開発</div>
         </div>
         <div class="hero-card hero-card-2">
-          <div class="card-avatar"></div>
+          <div class="card-icon card-icon-ai">
+            <svg viewBox="0 0 24 24" width="22" height="22"><circle cx="12" cy="12" r="3" stroke="#0984E3" stroke-width="2" fill="none"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83" stroke="#0984E3" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
           <div class="card-lines">
             <div class="card-line card-line-long"></div>
             <div class="card-line card-line-medium"></div>
           </div>
-          <div class="card-tag">デザイナー</div>
+          <div class="card-tag tag-blue">AI駆動</div>
         </div>
         <div class="hero-card hero-card-3">
-          <div class="card-avatar"></div>
+          <div class="card-icon card-icon-shield">
+            <svg viewBox="0 0 24 24" width="22" height="22"><path d="M12 2l7 4v5c0 5.25-3.5 9.74-7 11-3.5-1.26-7-5.75-7-11V6l7-4z" stroke="#00B894" stroke-width="2" fill="none" stroke-linejoin="round"/><path d="M9 12l2 2 4-4" stroke="#00B894" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
           <div class="card-lines">
             <div class="card-line card-line-long"></div>
             <div class="card-line card-line-short"></div>
           </div>
-          <div class="card-tag">マーケター</div>
+          <div class="card-tag tag-green">セキュリティ</div>
         </div>
       </div>
     </div>
@@ -103,137 +122,187 @@
     </div>
   </section>
 
-  <!-- Features Section -->
+  <!-- Core Value Section -->
   <section class="features" id="features">
     <div class="container">
       <div class="section-header">
-        <h2 class="section-title">想いでつながる、<br class="sp-only">新しい出会い</h2>
-        <p class="section-description">条件ではなく「共感」で企業と個人をマッチング。<br>ビジョンや価値観に共感できる、あなたにぴったりの職場が見つかります。</p>
+        <div class="section-badge">Core Value</div>
+        <h2 class="section-title">AI駆動エンジニアという<br class="sp-only">新しい選択肢</h2>
+        <p class="section-description">Cursor、Windsurf、Cline などの最新AIエージェントを使いこなすエンジニアが、<br>従来の数倍のスピードで御社のIT課題を解決します。</p>
       </div>
       <div class="features-grid">
         <div class="feature-card">
           <div class="feature-icon">
             <svg viewBox="0 0 48 48" width="48" height="48">
-              <rect x="4" y="8" width="40" height="32" rx="4" fill="none" stroke="#21BDDB" stroke-width="2.5"/>
-              <circle cx="18" cy="20" r="5" fill="none" stroke="#21BDDB" stroke-width="2"/>
-              <path d="M10 34c0-4 4-7 8-7s8 3 8 7" fill="none" stroke="#21BDDB" stroke-width="2"/>
-              <line x1="30" y1="18" x2="40" y2="18" stroke="#21BDDB" stroke-width="2"/>
-              <line x1="30" y1="24" x2="38" y2="24" stroke="#21BDDB" stroke-width="2"/>
-              <line x1="30" y1="30" x2="36" y2="30" stroke="#21BDDB" stroke-width="2"/>
+              <rect x="6" y="10" width="36" height="28" rx="4" fill="none" stroke="#6C5CE7" stroke-width="2.5"/>
+              <path d="M16 22l4 4 8-8" fill="none" stroke="#6C5CE7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M6 18h36" stroke="#6C5CE7" stroke-width="2"/>
+              <circle cx="11" cy="14" r="1.5" fill="#6C5CE7"/>
+              <circle cx="16" cy="14" r="1.5" fill="#6C5CE7"/>
             </svg>
           </div>
-          <h3 class="feature-title">共感で出会う</h3>
-          <p class="feature-description">給与や待遇ではなく、企業のビジョンや価値観への「共感」をベースにマッチング。本当にやりがいを感じられる仕事に出会えます。</p>
+          <h3 class="feature-title">高速開発</h3>
+          <p class="feature-description">AIを活用したコード生成により、従来の数倍のスピードでプロトタイプや機能実装が可能。アイデアを素早く形にします。</p>
         </div>
         <div class="feature-card">
           <div class="feature-icon">
             <svg viewBox="0 0 48 48" width="48" height="48">
-              <circle cx="24" cy="14" r="8" fill="none" stroke="#21BDDB" stroke-width="2.5"/>
-              <path d="M8 42c0-8 7-14 16-14s16 6 16 14" fill="none" stroke="#21BDDB" stroke-width="2.5"/>
-              <circle cx="38" cy="14" r="5" fill="none" stroke="#21BDDB" stroke-width="2"/>
-              <path d="M44 34c0-5-3-9-8-10" fill="none" stroke="#21BDDB" stroke-width="2"/>
+              <circle cx="24" cy="24" r="18" fill="none" stroke="#0984E3" stroke-width="2.5"/>
+              <circle cx="24" cy="24" r="6" fill="none" stroke="#0984E3" stroke-width="2"/>
+              <path d="M24 6v6M24 36v6M6 24h6M36 24h6" stroke="#0984E3" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M11.5 11.5l4.2 4.2M32.3 32.3l4.2 4.2M11.5 36.5l4.2-4.2M32.3 15.7l4.2-4.2" stroke="#0984E3" stroke-width="2" stroke-linecap="round"/>
             </svg>
           </div>
-          <h3 class="feature-title">気軽に話を聞きに行く</h3>
-          <p class="feature-description">「話を聞きに行きたい」ボタンで、気軽にカジュアル面談をリクエスト。まずは会社の雰囲気を知ることから始められます。</p>
+          <h3 class="feature-title">自律型対応</h3>
+          <p class="feature-description">単なる指示待ちではなく、AIを駆使してエラー検知やテスト、ドキュメント作成までを効率的に完結させます。</p>
         </div>
         <div class="feature-card">
           <div class="feature-icon">
             <svg viewBox="0 0 48 48" width="48" height="48">
-              <rect x="6" y="6" width="36" height="36" rx="6" fill="none" stroke="#21BDDB" stroke-width="2.5"/>
-              <path d="M16 24l5 5 11-11" fill="none" stroke="#21BDDB" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+              <rect x="4" y="14" width="16" height="20" rx="3" fill="none" stroke="#00B894" stroke-width="2.5"/>
+              <rect x="28" y="8" width="16" height="26" rx="3" fill="none" stroke="#00B894" stroke-width="2.5"/>
+              <rect x="16" y="20" width="16" height="18" rx="3" fill="none" stroke="#00B894" stroke-width="2"/>
+              <path d="M20 38v4h8v-4" stroke="#00B894" stroke-width="2"/>
             </svg>
           </div>
-          <h3 class="feature-title">ストーリーで会社を知る</h3>
-          <p class="feature-description">社員インタビューや社内の日常を伝えるストーリー機能で、募集情報だけではわからないリアルな会社の姿が見えてきます。</p>
+          <h3 class="feature-title">広範なカバー力</h3>
+          <p class="feature-description">インフラからモダンなフロントエンド（Next.js等）、業務自動化まで。AIのサポートで少人数でも多岐にわたる技術に対応します。</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Products Section -->
-  <section class="products" id="stories">
+  <!-- Pricing Section -->
+  <section class="pricing" id="pricing">
     <div class="container">
       <div class="section-header">
-        <h2 class="section-title">はたらくすべての人のインフラ</h2>
-        <p class="section-description">出会いから入社、そして活躍まで。<br>はたらく体験をトータルにサポートするプロダクト群。</p>
+        <div class="section-badge">Pricing</div>
+        <h2 class="section-title">選べる3つの料金プラン</h2>
+        <p class="section-description">企業のフェーズや必要とするリソース量に合わせて、<br>3段階の明確な価格設定をご用意しています。</p>
       </div>
-      <div class="products-list">
-        <div class="product-item">
-          <div class="product-visual">
-            <div class="product-mockup mockup-visit">
-              <div class="mockup-header">
-                <div class="mockup-dots"><span></span><span></span><span></span></div>
-              </div>
-              <div class="mockup-content">
-                <div class="mockup-card-list">
-                  <div class="mockup-card-item"></div>
-                  <div class="mockup-card-item"></div>
-                  <div class="mockup-card-item"></div>
-                </div>
-              </div>
+      <div class="pricing-grid">
+        <!-- Light Plan -->
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <div class="pricing-plan-name">ライト</div>
+            <div class="pricing-price">
+              <span class="pricing-yen">¥</span>
+              <span class="pricing-amount">39,800</span>
+              <span class="pricing-period">/月</span>
             </div>
+            <p class="pricing-tagline">情シス業務の効率化・IT相談中心</p>
           </div>
-          <div class="product-info">
-            <div class="product-badge">Visit</div>
-            <h3 class="product-title">Wantedly Visit</h3>
-            <p class="product-description">「共感」でマッチするビジネスSNS。気軽に会社訪問ができるアプリで、あなたに合った企業との出会いを実現します。</p>
-            <a href="#" class="product-link">詳しく見る →</a>
-          </div>
+          <ul class="pricing-features">
+            <li><span class="check">&#10003;</span>IT環境の相談・アドバイス</li>
+            <li><span class="check">&#10003;</span>SaaS選定サポート</li>
+            <li><span class="check">&#10003;</span>PC管理・セキュリティ相談</li>
+            <li><span class="check">&#10003;</span>月次レポート</li>
+            <li><span class="check">&#10003;</span>メール・チャットサポート</li>
+          </ul>
+          <a href="#" class="btn-pricing">無料で相談する</a>
         </div>
-        <div class="product-item product-item-reverse">
-          <div class="product-visual">
-            <div class="product-mockup mockup-hire">
-              <div class="mockup-header">
-                <div class="mockup-dots"><span></span><span></span><span></span></div>
-              </div>
-              <div class="mockup-content">
-                <div class="mockup-pipeline">
-                  <div class="pipeline-stage"><div class="pipeline-bar" style="height:60%"></div></div>
-                  <div class="pipeline-stage"><div class="pipeline-bar" style="height:80%"></div></div>
-                  <div class="pipeline-stage"><div class="pipeline-bar" style="height:45%"></div></div>
-                  <div class="pipeline-stage"><div class="pipeline-bar" style="height:90%"></div></div>
-                </div>
-              </div>
+        <!-- Standard Plan -->
+        <div class="pricing-card pricing-card-popular">
+          <div class="pricing-popular-badge">人気</div>
+          <div class="pricing-header">
+            <div class="pricing-plan-name">スタンダード</div>
+            <div class="pricing-price">
+              <span class="pricing-yen">¥</span>
+              <span class="pricing-amount">59,800</span>
+              <span class="pricing-period">/月</span>
             </div>
+            <p class="pricing-tagline">小規模開発・ツール連携・DX推進</p>
           </div>
-          <div class="product-info">
-            <div class="product-badge badge-green">Hire</div>
-            <h3 class="product-title">Wantedly Hire</h3>
-            <p class="product-description">次世代の採用管理システム（ATS）。応募者の管理から選考プロセスの最適化まで、採用活動を効率的にサポートします。</p>
-            <a href="#" class="product-link">詳しく見る →</a>
-          </div>
+          <ul class="pricing-features">
+            <li><span class="check">&#10003;</span>ライトプランの全機能</li>
+            <li><span class="check">&#10003;</span>小規模システム開発</li>
+            <li><span class="check">&#10003;</span>業務自動化（DX推進）</li>
+            <li><span class="check">&#10003;</span>ツール連携・API構築</li>
+            <li><span class="check">&#10003;</span>ノーコード/ローコード支援</li>
+            <li><span class="check">&#10003;</span>週次定例ミーティング</li>
+          </ul>
+          <a href="#" class="btn-pricing btn-pricing-primary">無料で相談する</a>
         </div>
-        <div class="product-item">
-          <div class="product-visual">
-            <div class="product-mockup mockup-engage">
-              <div class="mockup-header">
-                <div class="mockup-dots"><span></span><span></span><span></span></div>
-              </div>
-              <div class="mockup-content">
-                <div class="mockup-engagement">
-                  <div class="engage-circle">
-                    <svg viewBox="0 0 80 80">
-                      <circle cx="40" cy="40" r="35" fill="none" stroke="#eee" stroke-width="6"/>
-                      <circle cx="40" cy="40" r="35" fill="none" stroke="#21BDDB" stroke-width="6" stroke-dasharray="176 44" stroke-linecap="round" transform="rotate(-90 40 40)"/>
-                    </svg>
-                    <span class="engage-score">82</span>
-                  </div>
-                  <div class="engage-bars">
-                    <div class="engage-bar-row"><span class="engage-bar" style="width:85%"></span></div>
-                    <div class="engage-bar-row"><span class="engage-bar" style="width:72%"></span></div>
-                    <div class="engage-bar-row"><span class="engage-bar" style="width:90%"></span></div>
-                  </div>
-                </div>
-              </div>
+        <!-- Premium Plan -->
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <div class="pricing-plan-name">プレミアム</div>
+            <div class="pricing-price">
+              <span class="pricing-yen">¥</span>
+              <span class="pricing-amount">99,800</span>
+              <span class="pricing-period">/月</span>
             </div>
+            <p class="pricing-tagline">AI駆動エンジニアによる本格開発・伴走支援</p>
           </div>
-          <div class="product-info">
-            <div class="product-badge badge-purple">Engagement</div>
-            <h3 class="product-title">Engagement Suite</h3>
-            <p class="product-description">従業員の定着と活躍を支援するサービス群。福利厚生、モチベーション管理、社内報の3つのツールで組織を強化します。</p>
-            <a href="#" class="product-link">詳しく見る →</a>
+          <ul class="pricing-features">
+            <li><span class="check">&#10003;</span>スタンダードの全機能</li>
+            <li><span class="check">&#10003;</span>本格的なシステム開発</li>
+            <li><span class="check">&#10003;</span>AI駆動の高速プロトタイプ</li>
+            <li><span class="check">&#10003;</span>ITロードマップ策定</li>
+            <li><span class="check">&#10003;</span>経営視点での技術コンサル</li>
+            <li><span class="check">&#10003;</span>優先対応・専任担当</li>
+          </ul>
+          <a href="#" class="btn-pricing">無料で相談する</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Support Content Section -->
+  <section class="support" id="support">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge">What We Do</div>
+        <h2 class="section-title">具体的な支援内容</h2>
+        <p class="section-description">情シス業務からシステム開発、IT戦略まで。<br>御社のIT部門をまるごと担います。</p>
+      </div>
+      <div class="support-grid">
+        <div class="support-card">
+          <div class="support-icon">
+            <svg viewBox="0 0 48 48" width="40" height="40">
+              <rect x="8" y="6" width="32" height="24" rx="3" fill="none" stroke="#6C5CE7" stroke-width="2.5"/>
+              <path d="M8 14h32" stroke="#6C5CE7" stroke-width="2"/>
+              <rect x="18" y="30" width="12" height="8" fill="none" stroke="#6C5CE7" stroke-width="2"/>
+              <path d="M12 42h24" stroke="#6C5CE7" stroke-width="2.5" stroke-linecap="round"/>
+            </svg>
           </div>
+          <h3 class="support-title">IT環境の整備・運用</h3>
+          <p class="support-description">PC管理、SaaS選定、セキュリティ対策の相談。社内のIT環境を最適な状態に整備・維持します。</p>
+        </div>
+        <div class="support-card">
+          <div class="support-icon">
+            <svg viewBox="0 0 48 48" width="40" height="40">
+              <path d="M14 8v32M34 8v32" stroke="#0984E3" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M14 16h20M14 24h20M14 32h20" stroke="#0984E3" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="14" cy="16" r="3" fill="#0984E3"/>
+              <circle cx="34" cy="24" r="3" fill="#0984E3"/>
+              <circle cx="14" cy="32" r="3" fill="#0984E3"/>
+            </svg>
+          </div>
+          <h3 class="support-title">業務自動化 (DX)</h3>
+          <p class="support-description">AIやノーコードツールを用いた、ルーチンワークの自動化。手作業を減らし、本来の業務に集中できる環境を作ります。</p>
+        </div>
+        <div class="support-card">
+          <div class="support-icon">
+            <svg viewBox="0 0 48 48" width="40" height="40">
+              <path d="M14 18l-4 4 4 4" stroke="#00B894" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M34 18l4 4-4 4" stroke="#00B894" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M28 12l-8 24" stroke="#00B894" stroke-width="2.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="support-title">システム開発・改修</h3>
+          <p class="support-description">社内ツールの新規開発や、既存コードのメンテナンス・拡張。AI駆動で高速にプロトタイプを形にします。</p>
+        </div>
+        <div class="support-card">
+          <div class="support-icon">
+            <svg viewBox="0 0 48 48" width="40" height="40">
+              <circle cx="24" cy="24" r="16" fill="none" stroke="#E17055" stroke-width="2.5"/>
+              <path d="M24 14v10l7 7" stroke="#E17055" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M36 8l4 4M8 8l4 4" stroke="#E17055" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="support-title">IT戦略のパートナー</h3>
+          <p class="support-description">経営層に近い視点での技術選定やITロードマップの作成。ビジネスの成長をテクノロジーで加速させます。</p>
         </div>
       </div>
     </div>
@@ -244,68 +313,75 @@
     <div class="container">
       <div class="stats-grid">
         <div class="stat-card">
-          <div class="stat-number" data-target="43000">0</div>
-          <div class="stat-unit">社+</div>
-          <div class="stat-label">登録企業数</div>
+          <div class="stat-number" data-target="3">0</div>
+          <div class="stat-unit">倍速+</div>
+          <div class="stat-label">AI活用の開発スピード</div>
         </div>
         <div class="stat-card">
-          <div class="stat-number" data-target="4300000">0</div>
-          <div class="stat-unit">人+</div>
-          <div class="stat-label">個人ユーザー数</div>
+          <div class="stat-number" data-target="70">0</div>
+          <div class="stat-unit">%</div>
+          <div class="stat-label">コスト削減（正社員比）</div>
         </div>
         <div class="stat-card">
-          <div class="stat-number" data-target="350000">0</div>
-          <div class="stat-unit">件+</div>
-          <div class="stat-label">累計マッチング数</div>
+          <div class="stat-number" data-target="24">0</div>
+          <div class="stat-unit">h</div>
+          <div class="stat-label">以内の初期レスポンス</div>
         </div>
         <div class="stat-card">
-          <div class="stat-number" data-target="12">0</div>
-          <div class="stat-unit">年+</div>
-          <div class="stat-label">サービス運営実績</div>
+          <div class="stat-number" data-target="100">0</div>
+          <div class="stat-unit">%</div>
+          <div class="stat-label">月額固定・追加費用なし</div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- How It Works -->
-  <section class="how-it-works" id="companies">
+  <section class="how-it-works" id="steps">
     <div class="container">
       <div class="section-header">
-        <h2 class="section-title">かんたん3ステップで始められる</h2>
+        <div class="section-badge">How It Works</div>
+        <h2 class="section-title">導入はかんたん3ステップ</h2>
       </div>
       <div class="steps-grid">
         <div class="step-card">
           <div class="step-number">1</div>
           <div class="step-icon">
             <svg viewBox="0 0 64 64" width="64" height="64">
-              <circle cx="32" cy="24" r="12" fill="none" stroke="#21BDDB" stroke-width="2.5"/>
-              <path d="M12 56c0-11 9-20 20-20s20 9 20 20" fill="none" stroke="#21BDDB" stroke-width="2.5"/>
+              <rect x="12" y="8" width="40" height="48" rx="4" fill="none" stroke="#6C5CE7" stroke-width="2.5"/>
+              <path d="M22 24h20M22 32h16M22 40h12" stroke="#6C5CE7" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="32" cy="16" r="3" fill="#6C5CE7"/>
             </svg>
           </div>
-          <h3 class="step-title">プロフィールを作成</h3>
-          <p class="step-description">SNSアカウントで簡単登録。あなたの経験やスキル、興味のある分野を入力しましょう。</p>
+          <h3 class="step-title">無料ヒアリング</h3>
+          <p class="step-description">まずはお気軽にご相談ください。御社のIT課題や目指す方向性をヒアリングし、最適なプランをご提案します。</p>
         </div>
         <div class="step-card">
           <div class="step-number">2</div>
           <div class="step-icon">
             <svg viewBox="0 0 64 64" width="64" height="64">
-              <circle cx="32" cy="32" r="24" fill="none" stroke="#21BDDB" stroke-width="2.5"/>
-              <path d="M22 32l7 7 13-13" fill="none" stroke="#21BDDB" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+              <rect x="8" y="14" width="48" height="36" rx="4" fill="none" stroke="#0984E3" stroke-width="2.5"/>
+              <path d="M8 24h48" stroke="#0984E3" stroke-width="2"/>
+              <path d="M24 34l5 5 11-10" fill="none" stroke="#0984E3" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
           </div>
-          <h3 class="step-title">気になる企業を見つける</h3>
-          <p class="step-description">ビジョンや価値観に共感できる企業を探しましょう。ストーリーで会社のリアルな姿もチェック。</p>
+          <h3 class="step-title">プラン選択・契約</h3>
+          <p class="step-description">ライト・スタンダード・プレミアムから最適なプランを選択。月額固定なので予算計画も安心です。</p>
         </div>
         <div class="step-card">
           <div class="step-number">3</div>
           <div class="step-icon">
             <svg viewBox="0 0 64 64" width="64" height="64">
-              <rect x="8" y="16" width="48" height="32" rx="4" fill="none" stroke="#21BDDB" stroke-width="2.5"/>
-              <path d="M8 24l24 14 24-14" fill="none" stroke="#21BDDB" stroke-width="2.5"/>
+              <path d="M32 8l6 4v8c0 8-4 15-6 17-2-2-6-9-6-17v-8l6-4z" fill="none" stroke="#00B894" stroke-width="2.5" stroke-linejoin="round"/>
+              <path d="M10 28h12M42 28h12" stroke="#00B894" stroke-width="2.5" stroke-linecap="round"/>
+              <circle cx="10" cy="28" r="4" fill="none" stroke="#00B894" stroke-width="2"/>
+              <circle cx="54" cy="28" r="4" fill="none" stroke="#00B894" stroke-width="2"/>
+              <path d="M18 44h28" stroke="#00B894" stroke-width="2" stroke-linecap="round"/>
+              <path d="M22 50h20" stroke="#00B894" stroke-width="2" stroke-linecap="round"/>
             </svg>
           </div>
-          <h3 class="step-title">話を聞きに行く</h3>
-          <p class="step-description">「話を聞きに行きたい」ボタンを押して、カジュアルに企業との会話を始めましょう。</p>
+          <h3 class="step-title">サービス開始</h3>
+          <p class="step-description">専任のAI駆動エンジニアがアサインされ、すぐにサポート開始。チャットやミーティングで密に連携します。</p>
         </div>
       </div>
     </div>
@@ -315,11 +391,12 @@
   <section class="cta">
     <div class="container">
       <div class="cta-inner">
-        <h2 class="cta-title">あなたも、ココロオドル<br>シゴトに出会おう。</h2>
-        <p class="cta-description">まずは無料で登録して、あなたに合った企業を見つけましょう。</p>
+        <h2 class="cta-title">エンジニアを雇わずに、<br>攻めのITを始めよう。</h2>
+        <p class="cta-description">まずは無料相談から。御社のIT課題に最適なプランをご提案します。</p>
         <div class="cta-actions">
-          <a href="#" class="btn-primary btn-large">無料で始める</a>
+          <a href="#" class="btn-primary btn-large">無料で相談する</a>
         </div>
+        <p class="cta-note">※ 初回相談は無料です。契約の縛りはありません。</p>
       </div>
     </div>
   </section>
@@ -330,61 +407,61 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <a href="#" class="footer-logo">
-            <svg class="logo-icon" viewBox="0 0 32 32" width="28" height="28">
-              <circle cx="16" cy="16" r="16" fill="#21BDDB"/>
-              <text x="16" y="21" text-anchor="middle" fill="#fff" font-size="16" font-weight="bold" font-family="Lato, sans-serif">W</text>
+            <svg class="logo-icon" viewBox="0 0 36 36" width="28" height="28">
+              <defs>
+                <linearGradient id="logoGradFooter" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#6C5CE7"/>
+                  <stop offset="100%" stop-color="#0984E3"/>
+                </linearGradient>
+              </defs>
+              <rect width="36" height="36" rx="10" fill="url(#logoGradFooter)"/>
+              <path d="M10 18 L14 12 L18 20 L22 10 L26 18" stroke="#fff" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="14" cy="12" r="2" fill="#fff"/>
+              <circle cx="18" cy="20" r="2" fill="#fff"/>
+              <circle cx="22" cy="10" r="2" fill="#fff"/>
             </svg>
-            <span>Wantedly</span>
+            <span>Graph Pocket</span>
           </a>
-          <p class="footer-tagline">シゴトでココロオドルひとをふやす</p>
+          <p class="footer-tagline">AI駆動エンジニアによる<br>攻めのサブスク型社内SEサービス</p>
         </div>
         <div class="footer-links">
           <div class="footer-col">
             <h4 class="footer-heading">サービス</h4>
             <ul>
-              <li><a href="#">Wantedly Visit</a></li>
-              <li><a href="#">Wantedly Hire</a></li>
-              <li><a href="#">Engagement Suite</a></li>
-              <li><a href="#">Wantedly People</a></li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <h4 class="footer-heading">企業の方へ</h4>
-            <ul>
-              <li><a href="#">料金プラン</a></li>
-              <li><a href="#">導入事例</a></li>
-              <li><a href="#">採用ノウハウ</a></li>
-              <li><a href="#">お問い合わせ</a></li>
+              <li><a href="#features">サービス内容</a></li>
+              <li><a href="#pricing">料金プラン</a></li>
+              <li><a href="#support">支援内容</a></li>
+              <li><a href="#steps">導入の流れ</a></li>
             </ul>
           </div>
           <div class="footer-col">
             <h4 class="footer-heading">会社情報</h4>
             <ul>
-              <li><a href="#">運営会社</a></li>
-              <li><a href="#">採用情報</a></li>
+              <li><a href="#">運営会社 (Graph Code)</a></li>
               <li><a href="#">ブログ</a></li>
-              <li><a href="#">プレスリリース</a></li>
+              <li><a href="#">お知らせ</a></li>
+              <li><a href="#">採用情報</a></li>
             </ul>
           </div>
           <div class="footer-col">
             <h4 class="footer-heading">サポート</h4>
             <ul>
-              <li><a href="#">ヘルプセンター</a></li>
+              <li><a href="#">お問い合わせ</a></li>
+              <li><a href="#">よくあるご質問</a></li>
               <li><a href="#">利用規約</a></li>
               <li><a href="#">プライバシーポリシー</a></li>
-              <li><a href="#">特定商取引法</a></li>
             </ul>
           </div>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; Wantedly, Inc.</p>
+        <p>&copy; Graph Code Inc. All rights reserved.</p>
         <div class="footer-social">
-          <a href="#" aria-label="Twitter">
+          <a href="#" aria-label="X (Twitter)">
             <svg viewBox="0 0 24 24" width="20" height="20"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" fill="currentColor"/></svg>
           </a>
-          <a href="#" aria-label="Facebook">
-            <svg viewBox="0 0 24 24" width="20" height="20"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" fill="currentColor"/></svg>
+          <a href="#" aria-label="note">
+            <svg viewBox="0 0 24 24" width="20" height="20"><rect x="3" y="3" width="18" height="18" rx="3" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M7 8h10M7 12h10M7 16h6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
           </a>
         </div>
       </div>
